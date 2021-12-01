@@ -1,0 +1,67 @@
+<div class="row-layout row">
+  <igx-grid [data]="financialGridDataFinTechDataSource" rowSelection="multiple" [allowFiltering]="true" filterMode="excelStyleFilter" [allowAdvancedFiltering]="true" [autoGenerate]="false" width="100%" height="100%" displayDensity="cosy" primaryKey="id" class="grid">
+    <igx-column field="id" header="id" title="id" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="category" header="category" title="category" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="type" header="type" title="type" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="contract" header="contract" title="contract" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="settlement" header="settlement" title="settlement" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="country" header="country" title="country" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="region" header="region" title="region" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true" [pinned]="true"></igx-column>
+    <igx-column field="LastUpdate" header="LastUpdate" title="LastUpdate" dataType="date" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="openPrice" header="openPrice" title="openPrice" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="price" header="price" title="price" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="Chart" header="Chart" title="Chart" dataType="date" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="change" header="change" title="change" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="changeP" header="changeP" title="changeP" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="buy" header="buy" title="buy" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="sell" header="sell" title="sell" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="spread" header="spread" title="spread" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="volume" header="volume" title="volume" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="highD" header="highD" title="highD" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="lowD" header="lowD" title="lowD" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="highY" header="highY" title="highY" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="lowY" header="lowY" title="lowY" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="startY" header="startY" title="startY" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="indGrou" header="indGrou" title="indGrou" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="indSect" header="indSect" title="indSect" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="indSubg" header="indSubg" title="indSubg" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="secType" header="secType" title="secType" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="issuerN" header="issuerN" title="issuerN" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="moodys" header="moodys" title="moodys" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="fitch" header="fitch" title="fitch" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="dbrs" header="dbrs" title="dbrs" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="collatT" header="collatT" title="collatT" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="curncy" header="curncy" title="curncy" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="security" header="security" title="security" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="sector" header="sector" title="sector" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="cusip" header="cusip" title="cusip" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="ticker" header="ticker" title="ticker" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="cpn" header="cpn" title="cpn" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="maturity" header="maturity" title="maturity" dataType="date" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="krD_3YR" header="krD_3YR" title="krD_3YR" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="zV_SPREAD" header="zV_SPREAD" title="zV_SPREAD" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="kRD_5YR" header="kRD_5YR" title="kRD_5YR" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="kRD_1YR" header="kRD_1YR" title="kRD_1YR" dataType="number" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="indGrou2" header="indGrou2" title="indGrou2" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="indSect3" header="indSect3" title="indSect3" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="indSubg4" header="indSubg4" title="indSubg4" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="secType5" header="secType5" title="secType5" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="issuerN6" header="issuerN6" title="issuerN6" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="moodys7" header="moodys7" title="moodys7" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="fitch8" header="fitch8" title="fitch8" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="dbrs9" header="dbrs9" title="dbrs9" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-column field="collatT10" header="collatT10" title="collatT10" dataType="string" [sortable]="true" [movable]="true" [resizable]="true" [hasSummary]="true" [groupable]="true" [editable]="true"></igx-column>
+    <igx-action-strip>
+      <igx-grid-pinning-actions></igx-grid-pinning-actions>
+      <igx-grid-editing-actions [addRow]="true"></igx-grid-editing-actions>
+    </igx-action-strip>
+    <igx-grid-toolbar>
+      <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+      <igx-grid-toolbar-actions>
+        <igx-grid-toolbar-pinning></igx-grid-toolbar-pinning>
+        <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+        <igx-grid-toolbar-advanced-filtering></igx-grid-toolbar-advanced-filtering>
+      </igx-grid-toolbar-actions>
+    </igx-grid-toolbar>
+  </igx-grid>
+</div>
